@@ -1,16 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
+
 
 
 tesuu = 0                       # 手数料
 zandaka = 2000000                # 残高
+zandaka = int(sys.argv[1])
+
+
+
 zandaka_0 = zandaka
 nenritsu = 0.15                 # 年率
 # nenritsu = 0.3375                 # 年率 to_go
 year = 365
 month = 1                       # 月数
 nissu = 25 + (month-1) * 30
-hensai = 10000
+# hensai = 1000
+hensai = int(sys.argv[2])
 goukei = 0
 
 # month = 100
@@ -22,20 +29,21 @@ total_tesuu = []
 total_hensai = []
 wariai = []
 
+# print("<link rel='stylesheet' href='./../../../home.css'>")
 print("<table align='left' border='1'>")
 print("<tr>")
-print("<th>" + str("BORROWING") + "</th>")
-print("<th>" + str("RATE") + "</th>")
+print("<th>" + str("借入額") + "</th>")
+print("<th>" + str("年利") + "</th>")
 print("</tr>")
 print("<tr>")
 print("<td align='center'>" + str(zandaka) + "</th>")
 print("<td align='center'>" + str(nenritsu) + "</th>")
 print("</tr>")
 print("<tr>")
-print("<th>" + str("MONTH") + "</th>")
-print("<th>" + str("REPAYMENT") + "</th>")
-print("<th>" + str("CHARGE") + "</th>")
-print("<th>" + str("BALANCE") + "</th>")
+print("<th>" + str("Xヶ月目") + "</th>")
+print("<th>" + str("返済額") + "</th>")
+print("<th>" + str("手数料") + "</th>")
+print("<th>" + str("支払残高") + "</th>")
 print("</tr>")
 
 
@@ -71,7 +79,7 @@ print("<br>")
 
 # print("<table>")
 print("<tr>")
-print("<th>" + str("TOTAL PAYMENT") + "<br>")
+print("<th>" + str("総支払額") + "<br>")
 
 # print("合計: " + str(goukei))
 # print(total)
@@ -85,7 +93,7 @@ yoko = [(1+i) for i in range(len(x))]
 # tate = [1 for i in range(month)]
 
 
-print("<th>" + str("TOTAL CHARGE") + "</th>")
+print("<th>" + str("総手数料") + "</th>")
 print("</tr>")
 print("<tr>")
 print("<td align='center'>" + str(goukei) + "</td>")
@@ -113,9 +121,8 @@ for i in range(len(total)):
         break
 
 
-
-fig.savefig("img.png")
-
+fig.savefig("./img.png")
+print("<img src='./img.png'>")
 # plt.plot(y, label="fdsafdas") # この場合のplot関数の第一引数xは、x軸に対応し、第二引数のyがy軸にあたります。
 plt.legend()
-plt.show()
+# plt.show()
