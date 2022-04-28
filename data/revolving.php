@@ -18,7 +18,7 @@
             <br>
             <form action="./code/generator.php" method="post">
               <!-- <input type="textarea" name="confirm" value=""> -->
-              <label for="confirm1"><h3>借入額</h3></label><br>
+              <label for="confirm0"><h3>年利率</h3></label><br>
               <select name="confirm0" class="form">
                   <!-- <option value="blue">青</option> -->
                   <option value="0.10">10%</option>

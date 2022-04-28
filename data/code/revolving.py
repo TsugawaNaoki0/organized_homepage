@@ -18,19 +18,24 @@ import graph_maker
 
 
 tesuu = 0                       # 手数料
+
+# nenritsu = 0.15                 # 年利率
+nenritsu = float(sys.argv[1])                # 年利率
+# nenritsu = 0.3375                 # 年率 to_go
+
 zandaka = 2000000                # 残高
-zandaka = int(sys.argv[1])
+zandaka = int(sys.argv[2])
 
 
 
 zandaka_0 = zandaka
-nenritsu = 0.15                 # 年率
-# nenritsu = 0.3375                 # 年率 to_go
+
+
 year = 365
 month = 1                       # 月数
 nissu = 25 + (month-1) * 30
 # hensai = 1000
-hensai = int(sys.argv[2])
+hensai = int(sys.argv[3])
 goukei = 0
 
 # month = 100
