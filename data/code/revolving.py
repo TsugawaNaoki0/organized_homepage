@@ -1,6 +1,19 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import sys
+import graph_maker
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,8 +49,8 @@ print("<th>" + str("借入額") + "</th>")
 print("<th>" + str("年利") + "</th>")
 print("</tr>")
 print("<tr>")
-print("<td align='center'>" + str(zandaka) + "</th>")
-print("<td align='center'>" + str(nenritsu) + "</th>")
+print("<td align='center'>" + format(zandaka, ',') + "</th>")
+print("<td align='center'>" + format(nenritsu, ',') + "</th>")
 print("</tr>")
 print("<tr>")
 print("<th>" + str("Xヶ月目") + "</th>")
@@ -56,10 +69,10 @@ for i in range(month+1):
     zandaka = zandaka - hensai
     # print("Hello !!!!!!!!")
     print("<tr>")
-    print("<td align='center'>" + str(i+1) + "</td>")
-    print("<td align='center'>" + str(hensai) + "</td>")
-    print("<td align='center'>" + str(tesuu) + "</td>")
-    print("<td align='center'>" + str(zandaka) + "</td>")
+    print("<td align='center'>" + format((i+1), ',') + "</td>")
+    print("<td align='center'>" + format(hensai, ',') + "</td>")
+    print("<td align='center'>" + format(tesuu, ',') + "</td>")
+    print("<td align='center'>" + format(zandaka, ',') + "</td>")
     print("</tr>")
 
     # print("[MONTH" + str(i+1) + " : " + str(hensai) + "] [CHARGE : " + str(tesuu) + "] [BALANCE : " + str(zandaka) + "] " + "<br><br>")
@@ -84,45 +97,39 @@ print("<th>" + str("総支払額") + "<br>")
 # print("合計: " + str(goukei))
 # print(total)
 x = total_tesuu
-y = total
+normal_graph = total
 z = total_hensai
 q = wariai
-w = [zandaka_0 for j in range(len(x))]
-r = [total[len(total)-1] for d in range(len(x))]
+zandaka_graph = [zandaka_0 for j in range(len(x))]
+total_graph = [total[len(total)-1] for d in range(len(x))]
 yoko = [(1+i) for i in range(len(x))]
 # tate = [1 for i in range(month)]
-
+# print(yoko)
+# print(x)
 
 print("<th>" + str("総手数料") + "</th>")
 print("</tr>")
 print("<tr>")
-print("<td align='center'>" + str(goukei) + "</td>")
-print("<td align='center'>" + str(total[len(total)-1] - zandaka_0) + "</td>")
+print("<td align='center'>" + format(goukei, ',') + "</td>")
+print("<td align='center'>" + format((total[len(total)-1] - zandaka_0), ',') + "</td>")
 print("</tr>")
 print("</table>")
 
 # print("TOTAL CHARGE: " + str(total[len(total)-1] - zandaka_0))
 
-fig = plt.figure()
+# fig = plt.figure()
 # plt.bar(yoko, y) # この場合のplot関数の第一引数xは、x軸に対応し、第二引数のyがy軸にあたります。
-plt.plot(yoko, y) # この場合のplot関数の第一引数xは、x軸に対応し、第二引数のyがy軸にあたります。
-plt.plot(yoko, w)
-plt.plot(yoko, r)
-# plt.plot(64, tate)
-# plt.plot(tate)
+# plt.savefig("./img.png")
+# fig = plt.figure()
 
-print(total)
-for i in range(len(total)):
-    if (total[i] > zandaka_0):
-        print(total[i])
-        plt.plot(i, total[i], marker='o', markersize=10)
-        plt.text(i, total[i], "(" + str(i) + ", " + str(total[i]) + ")")
-        # plt.scatter(i, total[i], c='k', s=5)
-        break
+aaa = graph_maker.graph_maker_class()
+bbb = aaa.graph_maker(yoko, total, zandaka_0 ,normal_graph, zandaka_graph, total_graph)
 
 
-fig.savefig("./img.png")
 print("<img src='./img.png'>")
+
+
+
+# print("<img src='./img.png'>")
 # plt.plot(y, label="fdsafdas") # この場合のplot関数の第一引数xは、x軸に対応し、第二引数のyがy軸にあたります。
-plt.legend()
 # plt.show()
