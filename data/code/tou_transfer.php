@@ -167,5 +167,8 @@
                  }
                  window.onresize = EvtResize;
              </script>
+            <?php
+        }
+       ?>
    </body>
  </html>
