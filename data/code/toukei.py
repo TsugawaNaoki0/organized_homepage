@@ -3,11 +3,11 @@ import csv
 
 data_list = [[] for i in range(212)]
 
-with open('./toukei/kanagawa_2018syazyounerai.csv', 'r') as f:
+with open('./toukei/kanagawa_2018buhinnerai.csv', 'r') as f:
     reader = csv.reader(f)
     num = 0
     for line in reader:
-        print(line)
+        # print(line)
         # data_list[num].append(line)
         data_list[num] = line
         num += 1
@@ -17,18 +17,18 @@ with open('./toukei/kanagawa_2018syazyounerai.csv', 'r') as f:
 print()
 print()
 print()
-print(data_list)
-for i in range(len(data_list)):
-    print(data_list[i])
+# print(data_list)
+# for i in range(len(data_list)):
+#     print(data_list[i])
     # print(i)
 
 location_list = []
 
 num = len(data_list)
 
-for i in range(num):
-    location_list.append([data_list[i][0], data_list[i][1], str(data_list[i][4]+data_list[i][5]+data_list[i][6]), data_list[i][7], data_list[i][8], data_list[i][9], data_list[i][10], data_list[i][11]])
-    print(i)
+for i in range(1, num):
+    location_list.append([data_list[i][0], data_list[i][1], str(data_list[i][5]+data_list[i][6]+data_list[i][7]), data_list[i][8], data_list[i][9], data_list[i][10], data_list[i][11]])
+    # print(i)
 
 for i in range(len(location_list)):
     print(location_list[i])
