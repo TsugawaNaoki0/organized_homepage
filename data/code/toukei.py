@@ -1,9 +1,9 @@
 
 import csv
 
-data_list = [[] for i in range(212)]
+data_list = [[] for i in range(290)]
 
-with open('./toukei/kanagawa_2018buhinnerai.csv', 'r') as f:
+with open('./toukei/kanagawa_2018zidouhanbaikinerai.csv', 'r') as f:
     reader = csv.reader(f)
     num = 0
     for line in reader:
@@ -25,6 +25,9 @@ print()
 location_list = []
 
 num = len(data_list)
+print(num)
+for i in range(num):
+    print(data_list[i])
 
 for i in range(1, num):
     location_list.append([data_list[i][0], data_list[i][1], str(data_list[i][5]+data_list[i][6]+data_list[i][7]), data_list[i][8], data_list[i][9], data_list[i][10], data_list[i][11]])
