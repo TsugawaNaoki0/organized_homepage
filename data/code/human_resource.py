@@ -1,9 +1,12 @@
 import csv
-
+import numpy as np
+import matplotlib.pyplot as plt
 # https://testdata.userlocal.jp/
 #csvファイルを指定
-MyPath = 'dummy.csv'
+# MyPath = 'dummy.csv'
+MyPath = '6501_past.csv'
 
+stock_data = []
 #csvファイルを読み込み
 rows = []
 with open(MyPath) as f:
@@ -13,9 +16,45 @@ with open(MyPath) as f:
 
 for i in range(len(rows)):
     print(rows[i])
+    stock_data.append(rows[i])
     print("<br><br>")
 
-# print(rows[1])
+print()
+print()
+print()
+# for i in range(len(stock_data)):
+#     print(stock_data[i])
+print()
+
+y = []
+
+x = np.arange(0, len(stock_data), 1) #-5から5まで0.1区切りで配列を作る
+x = list(x)
+
+for i in range(1, len(stock_data)):
+    print(stock_data[i][1])
+    print(type(stock_data[i][1]))
+    y.append(float(stock_data[i][1])) #配列xの値に関してそれぞれsin(x)を求めてy軸の配列を生成
+print()
+# print(x)
+# print(y)
+
+# for i in range(len(x)):
+#     print(x[i])
+# for i in range(len(y)):
+#     print(y[i])
+# print(type(x))
+# print(type(y[1]))
+# print(y[1])
+
+# x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# y = [0, 2, 1, 2, 4, 5, 3, 7, 5, 9]
+
+# import matplotlib.pyplot as plt
+# fig, ax = plt.subplots()
+# ax.plot(y)
+# plt.plot(y)
+plt.show()# print(rows[1])
 
 
 """
