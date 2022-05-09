@@ -33,37 +33,11 @@ class mlb_data_class():
                     str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--score\">", "").replace("</td>", "")
                     str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--rank\">", "").replace("</td>", "")
                     str_data[i] = str(str_data[i]).replace("<th class=\"bb-subRankTable__head\" scope=\"col\">", "").replace("</th>", "")
-                    # str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021000/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021001/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021002/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021003/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021004/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021005/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021006/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021007/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021008/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021009/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021010/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021011/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021012/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021013/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021014/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021015/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021016/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021017/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021018/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021019/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021020/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021021/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021022/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021023/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021024/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021025/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021026/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021027/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021028/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021029/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/2021030/top\">", "").replace("</a>\n", "")
+
+                    for k in range(1, 10):
+                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/202100" + str(k) + "/top\">", "").replace("</a>\n", "")
+                    for k in range(10, 31):
+                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/202100" + str(k) + "/top\">", "").replace("</a>\n", "")
 
                     tag_data.append(str_data[i])
 
@@ -88,6 +62,7 @@ class mlb_data_class():
 
         for i in range(0, int(team_num/2)):
             se_data_list.append(data_list[i])
+
 
         for i in range(int(team_num/2), team_num):
             pa_data_list.append(data_list[i])
@@ -124,18 +99,8 @@ class npb_data_class():
                 if (i%2 != 0):
                     str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--score\">", "").replace("</td>", "")
                     str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--rank\">", "").replace("</td>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/1/top\">", "").replace("</a>\n", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/2/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/3/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/4/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/5/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/6/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/7/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/8/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/9/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/10/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/11/top\">", "").replace("</th>", "")
-                    str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/12/top\">", "").replace("</th>", "")
+                    for k in range(1, 13):
+                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/" + str(k) + "/top\">", "").replace("</th>", "")
                     str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/npb/teams/376/top\">", "").replace("</th>", "")
                     str_data[i] = str(str_data[i]).replace("<th class=\"bb-subRankTable__head\" scope=\"col\">", "").replace("</th>", "")
 
@@ -154,33 +119,92 @@ class npb_data_class():
         print("<br><br>")
         print("<br><br>")
         print("<br><br>")
-        for i in range(len(data_list)):
-            print(str(data_list[i]) + "<br><br>")
+        # for i in range(len(data_list)):
+        #     print(str(data_list[i]) + "<br><br>")
 
         se_data_list = []
         pa_data_list = []
 
         for i in range(0, int(team_num/2)):
             se_data_list.append(data_list[i])
+            if (0 < i):
+                win_rate = int(int(data_list[i][2]) / (int(data_list[i][2]) + int(data_list[i][3])) * 1000 ) / 1000
+                se_data_list[i].append(win_rate)
+            elif (i == 0):
+                se_data_list[i].append("勝率(切り捨て)")
+
 
         for i in range(int(team_num/2), team_num):
             pa_data_list.append(data_list[i])
+            if (7 < i):
+                win_rate = int(int(data_list[i][2]) / (int(data_list[i][2]) + int(data_list[i][3])) * 1000 ) / 1000
+                pa_data_list[i-7].append(win_rate)
+            elif (i == 7):
+                pa_data_list[i-7].append("勝率(切り捨て)")
+
+        # del pa_data_list[0][7]
 
         print()
         print()
-        print(se_data_list)
+        # print(se_data_list)
         print("<br><br>")
         # print(tag_data)
-        print(pa_data_list)
+        # print(pa_data_list)
+
+
+
+        # central league
+        print("<table border='1'>")
+        print("<tr>")
+        for i in range(7):
+            print("<th>")
+            print(se_data_list[0][i])
+            print("</th>")
+        print("</tr>")
+
+
+        for i in range(1, 7):
+            print("<tr>")
+            for k in range(7):
+                print("<td>")
+                print(se_data_list[i][k])
+                print("</td>")
+            print("</tr>")
+        print("</table>")
+
+        print("<br><br>")
+        print("<br><br>")
+        print("<br><br>")
+
+        # pacific league
+        print("<table border='1'>")
+        print("<tr>")
+        for i in range(7):
+            print("<th>")
+            print(pa_data_list[0][i])
+            print("</th>")
+        print("</tr>")
+
+
+        for i in range(1, 7):
+            print("<tr>")
+            for k in range(7):
+                print("<td>")
+                print(pa_data_list[i][k])
+                print("</td>")
+            print("</tr>")
+        print("</table>")
 
 
 
 league = str(sys.argv[1])
 
 if (league == "NPB"):
+    print("<h1>" + league + "</h1>")
     aaa = npb_data_class()
     bbb = aaa.npb_data()
 
 elif (league == "MLB"):
+    print("<h1>" + league + "</h1>")
     aaa = mlb_data_class()
     bbb = aaa.mlb_data()
