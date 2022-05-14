@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="./../../home.css">
+   <title>HallowinGhost</title>
+    <link rel="icon" href="ghost.png"><!-- タイトルにアイコンを設定 -->
+    <link rel="apple-touch-icon" href="icon.png"><!-- iphone のアイコンを設定 -->
+ </head>
+ <body>
+    <div class="main">
+            <br>
+            <h1>支払い</h1>
+            <br>
+            <!-- ※ 1ヶ月を30日(1年を360日)として計算しています -->
+            <br>
+            <fieldset>
+              <legend>月々の支払い</legend>
+
+              <div>
+
+                <label for="scales">Scales</label>
+              </div>
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">水道料金</label>
+              </div>
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">電気料金</label>
+              </div>
+              <div>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">家賃　　</label>
+              </div>
+            </fieldset>
+
+
+
+
+
+
+
+            <br>
+            <br>
+
+
+
+
+
+
+            <p>あなたはいま</p>
+            <p id="loc" class="position"></p>
+            <p>の場所にいます。ちなみに精度は半径 <span id="accuracy" class="position"></span> mです。</p>
+            <!-- <script type="text/javascript">
+              if( navigator.geolocation ){
+
+                alert('Hello World');
+              // 現在位置を取得できる場合の処理
+              } else {
+              // 現在位置を取得できない場合の処理
+                alert('Good Bye');
+
+              }            </script>
+ -->
+
+
+              <!-- <script type="text/javascript">
+                for (let step = 0; step < 5; step++){
+                  function success(position) {
+                    setTimeout(alert(position.coords.latitude + ", " + position.coords.longitude), 5000);
+                      }
+                  function error() {
+                      document.write("位置情報の取得に失敗しました。");
+                      }
+                  var watchId = navigator.geolocation.watchPosition(success, error);
+                }
+              </script> -->
+
+
+
+
+
+    </div>
+
+ </body>
+</html>
