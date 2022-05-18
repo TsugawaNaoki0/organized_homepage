@@ -1,23 +1,28 @@
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 # https://testdata.userlocal.jp/
 #csvファイルを指定
-# MyPath = 'dummy.csv'
-MyPath = '6501_past.csv'
+MyPath = 'dummy.csv'
+# MyPath = '6501_past.csv'
 
 stock_data = []
 #csvファイルを読み込み
 rows = []
+
+word = sys.argv[1]
+# print(word)
+print("<br><br>")
 with open(MyPath) as f:
     reader = csv.reader(f)
     for row in reader:
         rows.append(row)
 
 for i in range(len(rows)):
-    print(rows[i])
+    # print(rows[i])
     stock_data.append(rows[i])
-    print("<br><br>")
+    # print("<br><br>")
 
 print()
 print()
@@ -28,18 +33,24 @@ print()
 
 y = []
 
-x = np.arange(0, len(stock_data), 1) #-5から5まで0.1区切りで配列を作る
+x = np.arange(0, len(stock_data), 1)
 x = list(x)
 
-for i in range(1, len(stock_data)):
-    print(stock_data[i][1])
-    print(type(stock_data[i][1]))
-    y.append(float(stock_data[i][1])) #配列xの値に関してそれぞれsin(x)を求めてy軸の配列を生成
 print()
-# print(x)
-# print(y)
 
-# for i in range(len(x)):
+
+
+# for i in range(len(stock_data)):  # 名前以外もヒットする
+#     for k in range(len(stock_data[i])):
+#         if (word in stock_data[i][k]):
+#             print(stock_data[i])
+#             print("<br><br>")
+
+for i in range(len(stock_data)):    # 名前だけ
+    if (word in stock_data[i][1]):
+        print(stock_data[i])
+        print("<br><br>")
+
 #     print(x[i])
 # for i in range(len(y)):
 #     print(y[i])
@@ -54,7 +65,7 @@ print()
 # fig, ax = plt.subplots()
 # ax.plot(y)
 # plt.plot(y)
-plt.show()# print(rows[1])
+# plt.show()# print(rows[1])
 
 
 """
