@@ -1,3 +1,5 @@
+
+
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +15,7 @@ rows = []
 
 word = sys.argv[1]
 # print(word)
-print("<br><br>")
+
 with open(MyPath) as f:
     reader = csv.reader(f)
     for row in reader:
