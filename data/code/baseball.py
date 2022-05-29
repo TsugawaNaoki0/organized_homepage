@@ -34,10 +34,10 @@ class mlb_data_class():
                     str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--rank\">", "").replace("</td>", "")
                     str_data[i] = str(str_data[i]).replace("<th class=\"bb-subRankTable__head\" scope=\"col\">", "").replace("</th>", "")
 
-                    for k in range(1, 10):
-                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/202100" + str(k) + "/top\">", "").replace("</a>\n", "")
-                    for k in range(10, 31):
-                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/202100" + str(k) + "/top\">", "").replace("</a>\n", "")
+                    for m in range(10, 31):
+                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/20210" + str(m) + "/top\">", "")
+                    for m in range(1, 10):
+                        str_data[i] = str(str_data[i]).replace("<td class=\"bb-subRankTable__data bb-subRankTable__data--team\">\n<a href=\"/mlb/teams/202100" + str(m) + "/top\">", "")
 
                     tag_data.append(str_data[i])
 
@@ -50,29 +50,91 @@ class mlb_data_class():
                 data_list[k].append(tag_data[num])
                 num += 1
 
-        print("<br><br>")
-        print("<br><br>")
-        print("<br><br>")
-        print("<br><br>")
-        for i in range(len(data_list)):
-            print(str(data_list[i]) + "<br><br>")
+        # for i in range(len(data_list)):
+        #     print(str(data_list[i]) + "<br><br>")
 
-        se_data_list = []
-        pa_data_list = []
+        ame_data_list = []
+        nat_data_list = []
 
         for i in range(0, int(team_num/2)):
-            se_data_list.append(data_list[i])
+            ame_data_list.append(data_list[i])
 
 
         for i in range(int(team_num/2), team_num):
-            pa_data_list.append(data_list[i])
+            nat_data_list.append(data_list[i])
 
         print()
         print()
-        print(se_data_list)
-        print("<br><br>")
+        # print(se_data_list)
         # print(tag_data)
-        print(pa_data_list)
+        # print(pa_data_list)
+        print("<h2>")
+        print("AMERICAN league")
+        print("</h2>")
+        print("<table border='1'>")
+        print("<tr>")
+        for k in range(0, 6):
+            for i in range(6):
+                print("<th>")
+                print(ame_data_list[k][i])
+                print("</th>")
+            print("</tr>")
+        print("</table>")
+        print("<br>")
+        print("<table border='1'>")
+        print("<tr>")
+        for k in range(6, 12):
+            for i in range(6):
+                print("<th>")
+                print(ame_data_list[k][i])
+                print("</th>")
+            print("</tr>")
+        print("</table>")
+        print("<br>")
+        print("<table border='1'>")
+        print("<tr>")
+        for k in range(12, 18):
+            for i in range(6):
+                print("<th>")
+                print(ame_data_list[k][i])
+                print("</th>")
+            print("</tr>")
+        print("</table>")
+
+        print("<br>")
+
+        print("<h2>")
+        print("NATIONAL league")
+        print("</h2>")
+        print("<table border='1'>")
+        print("<tr>")
+        for k in range(0, 6):
+            for i in range(6):
+                print("<th>")
+                print(nat_data_list[k][i])
+                print("</th>")
+            print("</tr>")
+        print("</table>")
+        print("<br>")
+        print("<table border='1'>")
+        print("<tr>")
+        for k in range(6, 12):
+            for i in range(6):
+                print("<th>")
+                print(nat_data_list[k][i])
+                print("</th>")
+            print("</tr>")
+        print("</table>")
+        print("<br>")
+        print("<table border='1'>")
+        print("<tr>")
+        for k in range(12, 18):
+            for i in range(6):
+                print("<th>")
+                print(nat_data_list[k][i])
+                print("</th>")
+            print("</tr>")
+        print("</table>")
 
 
 
