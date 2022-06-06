@@ -29,8 +29,7 @@ for i in range(len(rows)):
 print()
 print()
 print()
-# for i in range(len(stock_data)):
-#     print(stock_data[i])
+
 print()
 
 y = []
@@ -40,35 +39,24 @@ x = list(x)
 
 print()
 
+print("<table border='1'>")
+print("<tr>")
+for i in range(10):
+    print("<td>")
+    print(stock_data[0][i])
+    print("</td>")
+print("</tr>")
 
-
-# for i in range(len(stock_data)):  # 名前以外もヒットする
-#     for k in range(len(stock_data[i])):
-#         if (word in stock_data[i][k]):
-#             print(stock_data[i])
-#             print("<br><br>")
-
+print("<tr>")
 for i in range(len(stock_data)):    # 名前だけ
     if (word in stock_data[i][1]):
-        print(stock_data[i])
-        print("<br><br>")
+        for k in range(10):
+            print("<td>")
+            print(stock_data[i][k])
+            print("</td>")
 
-#     print(x[i])
-# for i in range(len(y)):
-#     print(y[i])
-# print(type(x))
-# print(type(y[1]))
-# print(y[1])
-
-# x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# y = [0, 2, 1, 2, 4, 5, 3, 7, 5, 9]
-
-# import matplotlib.pyplot as plt
-# fig, ax = plt.subplots()
-# ax.plot(y)
-# plt.plot(y)
-# plt.show()# print(rows[1])
-
+print("</tr>")
+print("</table>")
 
 """
 # csvモジュールを使ってCSVファイルから1行ずつ読み込む
