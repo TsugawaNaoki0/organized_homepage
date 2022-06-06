@@ -1,5 +1,3 @@
-
-
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,11 +8,11 @@ MyPath = 'dummy.csv'
 # MyPath = '6501_past.csv'
 
 stock_data = []
-#csvファイルを読み込み
+
 rows = []
 
 word = sys.argv[1]
-# print(word)
+
 
 with open(MyPath) as f:
     reader = csv.reader(f)
@@ -22,41 +20,47 @@ with open(MyPath) as f:
         rows.append(row)
 
 for i in range(len(rows)):
-    # print(rows[i])
     stock_data.append(rows[i])
-    # print("<br><br>")
 
-print()
-print()
-print()
 
-print()
 
 y = []
 
 x = np.arange(0, len(stock_data), 1)
 x = list(x)
 
-print()
+
+
+print("<!DOCTYPE html><html lang='ja'><head><meta charset='utf-8'>")
+print("<link rel='stylesheet' href='./../../../home.css'>")
+print("<title>HallowinGhost</title>")
+print("<link rel='icon' href='ghost.png'><!-- タイトルにアイコンを設定 -->")
+print("<link rel='apple-touch-icon' href='icon.png'><!-- iphone のアイコンを設定 --></head>")
+print("<body><div class='main'><br><h1>")
+print(word)
+print("</h1><br><br>")
+
+
 
 print("<table border='1'>")
 print("<tr>")
-for i in range(10):
+for i in range(9):
     print("<td>")
     print(stock_data[0][i])
     print("</td>")
 print("</tr>")
 
-print("<tr>")
 for i in range(len(stock_data)):    # 名前だけ
     if (word in stock_data[i][1]):
-        for k in range(10):
+        print("<tr>")
+        for k in range(9):
             print("<td>")
             print(stock_data[i][k])
             print("</td>")
-
-print("</tr>")
+        print("</tr>")
 print("</table>")
+
+print("<br><br></div></body></html>")
 
 """
 # csvモジュールを使ってCSVファイルから1行ずつ読み込む
