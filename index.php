@@ -46,6 +46,9 @@
       <h2><a href="./data/news_paper.html">新聞</a></h2>
       <br>
       <br>
+      <h2><a href="./bandit/index.php">バンディット</a></h2>
+      <br>
+      <br>
       <h2><a href="./data/payment.html">支払い</a></h2>
       <br>
       <br>
