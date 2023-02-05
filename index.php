@@ -15,7 +15,7 @@
       <br>
       <br>
       <h1>HOME</h1>
-      <h2><a href="./data/taihou.html">泰鵬大学(モデル：日大)</a></h2>
+      <h2><a href="./data/taihou.php">泰鵬大学(モデル：日大)</a></h2>
       参考  https://generated.photos/
       <br>
       <br>
