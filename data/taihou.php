@@ -14,9 +14,10 @@
       <br>
       <br>
       <br>
+      HOME
       <hr>
       <div class="main_left">
-        <form class="" action="./taihou.php" method="post">
+        <form class="" action="#" method="post">
           <div class="">
             <br>
             <br>

@@ -1,4 +1,4 @@
-<<0001>>http://localhost/data/shoukai_g.html
+<<0001>>./shoukai_g.php
 <<0002>>./gakubu/houritsu.html
 <<0003>>./gakubu/seikei.html
 <<0004>>./gakubu/bunkoku.html
