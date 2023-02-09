@@ -1,0 +1,29 @@
+
+body{
+
+  background-color: #99CCFF;
+}
+
+.total_main{
+}
+
+
+.main_left{
+  float: left;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  /* background-color:black; */
+
+}
+
+.main_right{
+  float: right;
+  width: 66%;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color:red; */
+
+}
