@@ -77,26 +77,40 @@
         <br>
       </div>
       <div class="main_right">
-        <!-- <hr>
-        <hr> -->
           <h1>
-            <a href="./shoukai_g.php">学部紹介</a>
-            <a href="#">大学の特色</a>
-            <a href="#">研究や社会貢献</a>
-            <a href="#">学部・大学院</a>
-            <a href="#">留学・国際交流</a>
-            <a href="#">留学・国際交流</a>
-            <a href="#">学生生活の手引き</a>
-            <a href="#">就職・キャリア</a>
+            <table border="1">
+              <tr>
+                <td><a href="./shoukai_g.php">学部紹介</a></td>
+                <td><a href="#">大学の特色</a></td>
+                <td><a href="#">研究や社会貢献</a></td>
+                <td><a href="#">学部・大学院</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">留学・国際交流</a></td>
+                <td><a href="#">留学・国際交流</a></td>
+                <td><a href="#">学生生活の手引き</a></td>
+                <td><a href="#">就職・キャリア</a></td>
+              </tr>
+            </table>
           </h1>
         <hr>
           <h1>
-            <a href="#">在学生の方へ</a>
-            <a href="#">卒業生の方へ</a>
-            <a href="#">受験生の方へ</a>
-            <a href="#">保護者の方へ</a>
-            <a href="#">一般・地域の方へ</a>
-            <a href="#">企業・研究者の方へ</a>
+            <table border="1">
+              <tr>
+                <td><a href="#">在学生の方へ</a></td>
+                <td><a href="#">卒業生の方へ</a></td>
+                <td><a href="#">受験生の方へ</a></td>
+              </tr>
+              <tr>
+                <td><a href="#">保護者の方へ</a></td>
+                <td><a href="#">一般・地域の方へ</a></td>
+                <td><a href="#">企業・研究者の方へ</a></td>
+              </tr>
+            </table>
+
+
+
+
           </h1>
           <div class="">
             <h2>重要</h2>
