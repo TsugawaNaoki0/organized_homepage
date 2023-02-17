@@ -28,7 +28,7 @@
       <h2><a href="./data/incident.html">事件</a></h2>
       <br>
       <br>
-      <h2><a href="http://35.77.185.198/"  target="_blank">掲示板</a></h2>
+      <h2><a href="http://3.22.105.214/"  target="_blank">掲示板</a></h2>
       <br>
       <br>
       <h2><a href="./data/politics.html">政治</a></h2>
@@ -52,40 +52,16 @@
       <h2><a href="./data/payment.html">支払い</a></h2>
       <br>
       <br>
-      <h2><a href="./data/research.html">調べ学習</a></h2>
-      <br>
-      <br>
       <h2><a href="./data/revolving.html">リボ払い計算式</a></h2>
       <br>
       <br>
       <h2><a href="./data/zeikin.html">税金計算</a></h2>
       <br>
       <br>
-      <h2><a href="./data/map.html">地図</a></h2>
-      <br>
-      <br>
-      <h2><a href="./data/baseball.html">野球</a></h2>
-      <br>
-      <br>
-      <h2><a href="./data/soccer.html">J リーグ</a></h2>
-      <br>
-      <br>
       <h2><a href="./data/human_resource.html">人びと</a></h2>
       <br>
       <br>
-      <h2><a href="./data/weather.html">天気</a></h2>
-      <br>
-      <br>
-      <h2><a href="./data/kabu_moving.html">株価の変動</a></h2>
-      <br>
-      <br>
-      <h2><a href='./data/fudousan.html'>不動産</a></h2>
-      <br>
-      <br>
       <h2><a href='./data/museum.html'>美術館</a></h2>
-      <br>
-      <br>
-      <h2><a href='./data/toukei.html'>統計</a></h2>
       <br>
       <br>
       <h2><a href='https://www.oshimaland.co.jp/' target='_blank'>大島てる</a></h2>
