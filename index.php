@@ -37,7 +37,7 @@
       <h2><a href="../search/index.php">検索</a></h2>
       <br>
       <br>
-      <h2><a href="../zero_wiki/index.php">検索</a></h2>
+      <h2><a href="../zero_wiki/index.php">観測中</a></h2>
       <br>
       <br>
       <h2><a href="./data/chousei.html">年末調整</a></h2>
