@@ -34,6 +34,9 @@
       <h2><a href="./data/politics.html">政治</a></h2>
       <br>
       <br>
+      <h2><a href="../search/index.php">検索</a></h2>
+      <br>
+      <br>
       <h2><a href="./data/chousei.html">年末調整</a></h2>
       <br>
       <br>
