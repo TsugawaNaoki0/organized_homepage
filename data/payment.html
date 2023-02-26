@@ -36,21 +36,8 @@
                 <label for="horns">家賃　　</label>
               </div>
             </fieldset>
-
-
-
-
-
-
-
             <br>
             <br>
-
-
-
-
-
-
             <p>あなたはいま</p>
             <p id="loc" class="position"></p>
             <p>の場所にいます。ちなみに精度は半径 <span id="accuracy" class="position"></span> mです。</p>
@@ -64,24 +51,16 @@
                 alert('Good Bye');
               }
 
-        // for (let step = 0; step < 1; step++){
-        function success(position) {
-          // setTimeout(alert(position.coords.latitude + ", " + position.coords.longitude), 5000);
-          // alert(position.coords.latitude + ", " + position.coords.longitude);
-          // document.getElementById("accuracy") = position.coords.latitude + ", " + position.coords.longitude;
-          var sample = position.coords.latitude + ", " + position.coords.longitude;
-          document.getElementById("loc").textContent = sample;
-          // document.write(position.coords.latitude + ", " + position.coords.longitude);
+              function success(position) {
+                var sample = position.coords.latitude + ", " + position.coords.longitude;
+                document.getElementById("loc").textContent = sample;
+                }
 
-          // alert("rdxtrdsxytrdxytxyt");
-          // document.write(position.coords.latitude + "<br>");
-          }
+              function error() {
+                document.write("位置情報の取得に失敗しました。");
+                }
 
-        function error() {
-          document.write("位置情報の取得に失敗しました。");
-          }
-          // }
-       var watchId = navigator.geolocation.watchPosition(success, error);
+             var watchId = navigator.geolocation.watchPosition(success, error);
      </script>
    </div>
  </body>
