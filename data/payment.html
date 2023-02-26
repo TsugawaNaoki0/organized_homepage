@@ -54,7 +54,7 @@
             <p>あなたはいま</p>
             <p id="loc" class="position"></p>
             <p>の場所にいます。ちなみに精度は半径 <span id="accuracy" class="position"></span> mです。</p>
-            <!-- <script type="text/javascript">
+            <script type="text/javascript">
               if( navigator.geolocation ){
 
                 alert('Hello World');
@@ -62,28 +62,27 @@
               } else {
               // 現在位置を取得できない場合の処理
                 alert('Good Bye');
+              }
 
-              }            </script>
- -->
+        // for (let step = 0; step < 1; step++){
+        function success(position) {
+          // setTimeout(alert(position.coords.latitude + ", " + position.coords.longitude), 5000);
+          // alert(position.coords.latitude + ", " + position.coords.longitude);
+          // document.getElementById("accuracy") = position.coords.latitude + ", " + position.coords.longitude;
+          var sample = position.coords.latitude + ", " + position.coords.longitude;
+          document.getElementById("loc").textContent = sample;
+          // document.write(position.coords.latitude + ", " + position.coords.longitude);
 
+          // alert("rdxtrdsxytrdxytxyt");
+          // document.write(position.coords.latitude + "<br>");
+          }
 
-              <!-- <script type="text/javascript">
-                for (let step = 0; step < 5; step++){
-                  function success(position) {
-                    setTimeout(alert(position.coords.latitude + ", " + position.coords.longitude), 5000);
-                      }
-                  function error() {
-                      document.write("位置情報の取得に失敗しました。");
-                      }
-                  var watchId = navigator.geolocation.watchPosition(success, error);
-                }
-              </script> -->
-
-
-
-
-
-    </div>
-
+        function error() {
+          document.write("位置情報の取得に失敗しました。");
+          }
+          // }
+       var watchId = navigator.geolocation.watchPosition(success, error);
+     </script>
+   </div>
  </body>
 </html>
